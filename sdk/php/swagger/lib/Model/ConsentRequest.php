@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Hydra\SDK
+ * @package  HydraSDK
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Hydra\SDK\Model;
+namespace HydraSDK\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ConsentRequest Class Doc Comment
  *
  * @category    Class
- * @package     Hydra\SDK
+ * @package     HydraSDK
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class ConsentRequest implements ArrayAccess
     protected static $swaggerTypes = [
         'acr' => 'string',
         'challenge' => 'string',
-        'client' => '\Hydra\SDK\Model\OAuth2Client',
+        'client' => '\HydraSDK\Model\OAuth2Client',
         'login_challenge' => 'string',
         'login_session_id' => 'string',
-        'oidc_context' => '\Hydra\SDK\Model\OpenIDConnectContext',
+        'oidc_context' => '\HydraSDK\Model\OpenIDConnectContext',
         'request_url' => 'string',
         'requested_access_token_audience' => 'string[]',
         'requested_scope' => 'string[]',
@@ -264,7 +264,7 @@ class ConsentRequest implements ArrayAccess
 
     /**
      * Gets client
-     * @return \Hydra\SDK\Model\OAuth2Client
+     * @return \HydraSDK\Model\OAuth2Client
      */
     public function getClient()
     {
@@ -273,7 +273,7 @@ class ConsentRequest implements ArrayAccess
 
     /**
      * Sets client
-     * @param \Hydra\SDK\Model\OAuth2Client $client
+     * @param \HydraSDK\Model\OAuth2Client $client
      * @return $this
      */
     public function setClient($client)
@@ -327,7 +327,7 @@ class ConsentRequest implements ArrayAccess
 
     /**
      * Gets oidc_context
-     * @return \Hydra\SDK\Model\OpenIDConnectContext
+     * @return \HydraSDK\Model\OpenIDConnectContext
      */
     public function getOidcContext()
     {
@@ -336,7 +336,7 @@ class ConsentRequest implements ArrayAccess
 
     /**
      * Sets oidc_context
-     * @param \Hydra\SDK\Model\OpenIDConnectContext $oidc_context
+     * @param \HydraSDK\Model\OpenIDConnectContext $oidc_context
      * @return $this
      */
     public function setOidcContext($oidc_context)
@@ -502,10 +502,10 @@ class ConsentRequest implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Hydra\SDK\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\HydraSDK\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Hydra\SDK\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\HydraSDK\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * JSONWebKey
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-04-02T13:01:09.037+02:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-04-06T12:08:52.139+02:00")
 public class JSONWebKey {
   @JsonProperty("alg")
   private String alg = null;
